@@ -1,0 +1,10 @@
+
+version: 2
+
+sources:
+    - name: DEV
+      database: RAWDATA
+      tables:
+        - name: ORDERS
+        - name: CUSTOMERS
+        - name: PAYMENTS
