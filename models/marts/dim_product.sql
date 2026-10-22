@@ -1,0 +1,2 @@
+SELECT PRODUCT_ID, PRODUCT_NAME, CATEGORY, UNIT_PRICE
+FROM {{ ref('stg_products') }}

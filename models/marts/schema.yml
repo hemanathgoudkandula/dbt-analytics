@@ -1,0 +1,20 @@
+version: 2
+models:
+  - name: dim_customer
+    columns:
+      - name: customer_id
+        data_tests: [not_null, unique]
+  - name: dim_product
+    columns:
+      - name: product_id
+        data_tests: [not_null, unique]
+  - name: dim_date
+    columns:
+      - name: date_key
+        data_tests: [not_null, unique]
+  - name: fct_order_items
+    columns:
+      - name: order_item_id
+        data_tests: [not_null, unique]
+      - name: customer_id
+        data_tests:
